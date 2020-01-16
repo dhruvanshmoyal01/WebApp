@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!---------------------------------------- Required meta tags ------------------------------------>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-------------------------------------------Custom css link------------------------------------>    	
+ 	<link rel="stylesheet" type="text/css" href="customcss/demo3style.css">
+<!----------------------------------------Font awesome cdn link----------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
+<!------------------------------------------ Bootstrap CSS --------------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!------------------------------------------------tittle------------------------------------------>
+	<title>Drugs Lol</title>
+</head>
+<body>
+
+<!--------------------------------------------------- navbar ----------------------------------------------------->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="drug-logo">
+  	<a class="navbar-brand" href="#"><img src="images/drugslogonav.png"></a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Drugs A-z <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Pill Identifier <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Interaction Checker <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">New Drug <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Pro Edition <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">More <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign In</button>
+    </form>
+  </div>
+</nav>
+
+<!--------------------------------------------------- Find drugs header ----------------------------------------------------->
+
+<section class="newsletter" id="newsletterid">
+  <div class="container heading text-center">
+    <h1 class="text-uppercase font-weight-bold text-center">Find Drugs and Condition</h1>
+  </div>  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-12">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control news-input" placeholder="Enter drug name or medical condition, pill imprint, etc.">
+          </div>
+          <div class="ddc-hero-wrapper__trending">
+			Trending searches:
+			<a href="#">gabapentin</a>, 
+			<a href="#">amlodipine</a>, 
+			<a href="#">lisinopril</a>, 
+			<a href="#">tramadol</a>, 
+			<a href="#">prednisone</a>			
+		  </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!---------------------------------------------------  carousel ----------------------------------------------------->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner container">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="images/conditions-diseases.png" class="img-fluid img-thumbnail"></a>
+              <h5>Condition & Diseases</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="images/drugs-az.png" class="img-fluid img-thumbnail"></a>
+           	  <h5>Drugs A-Z</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="images/interactions-checker.png" class="img-fluid img-thumbnail"></a>
+              <h5>Interaction Checker</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="images/my-med-list.png" class="img-fluid img-thumbnail"></a>
+              <h5>My med list</h5>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="images/pill-identifier.png" class="img-fluid img-thumbnail"></a>
+              <h5>Pill identification</h5>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="images/treatment-guides.png" class="img-fluid img-thumbnail"></a>
+              <h5>Treatment guides</h5>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="images/discount-card.png" class="img-fluid img-thumbnail"></a>
+              <h5>Discount card</h5>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <div class="box">
+              <a href="#"><img src="images/price-guide.png" class="img-fluid img-thumbnail"></a>
+              <h5>Price guide</h5>
+             </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!--------------------------------------------------- Search drugs ----------------------------------------------------->
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<p>
+			  <a class="btn btn-primary" data-toggle="collapse" href="#tab-section-1" role="button" aria-expanded="false" aria-controls="tab-section-1">
+			    Browse Drugs
+			  </a>
+			  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tab-section-2" aria-expanded="false" aria-controls="tab-section-2">
+			    Button Conditions
+			  </button>
+			</p>
+			<div class="collapse" id="tab-section-1">
+			  <div class="card card-body">
+			    <nav aria-label="Drug alphabetical index">
+					<ul>
+						<li><a href="#" >A</a></li>
+						<li><a href="#" >B</a></li>
+						<li><a href="#" >C</a></li>
+						<li><a href="#" >D</a></li>
+						<li><a href="#" >E</a></li>
+						<li><a href="#" >F</a></li>
+						<li><a href="#" >G</a></li>
+						<li><a href="#" >H</a></li>
+						<li><a href="#" >I</a></li>
+						<li><a href="#" >J</a></li>
+						<li><a href="#" >K</a></li>
+						<li><a href="#" >L</a></li>
+						<li><a href="#" >M</a></li>
+						<li><a href="#" >N</a></li>
+						<li><a href="#" >O</a></li>
+						<li><a href="#" >P</a></li>
+						<li><a href="#" >Q</a></li>
+						<li><a href="#" >R</a></li>
+						<li><a href="#" >S</a></li>
+						<li><a href="#" >T</a></li>
+						<li><a href="#" >U</a></li>
+						<li><a href="#" >V</a></li>
+						<li><a href="#" >W</a></li>
+						<li><a href="#" >X</a></li>
+						<li><a href="#" >Y</a></li>
+						<li><a href="#" >Z</a></li>
+						<li><a href="#" >0-9</a></li>
+						<li><a href="#">Advanced Search</a></li>
+					</ul>
+				</nav>
+				<p class="ddc-section__browse-more clear">Browse A-Z: <a href="/drug_information.html">Drug</a>, <a href="/medical_conditions.html">Treatment</a>, <a href="/alpha/condition/">Condition</a> or <a href="/drug-classes.html">Class</a></p>
+			  </div>
+			</div>
+			<div class="collapse" id="tab-section-2">
+			  <div class="card card-body">
+			    <nav">
+					<ul>
+						<li><a href="#" >A</a></li>
+						<li><a href="#" >B</a></li>
+						<li><a href="#" >C</a></li>
+						<li><a href="#" >D</a></li>
+						<li><a href="#" >E</a></li>
+						<li><a href="#" >F</a></li>
+						<li><a href="#" >G</a></li>
+						<li><a href="#" >H</a></li>
+						<li><a href="#" >I</a></li>
+						<li><a href="#" >J</a></li>
+						<li><a href="#" >K</a></li>
+						<li><a href="#" >L</a></li>
+						<li><a href="#" >M</a></li>
+						<li><a href="#" >N</a></li>
+						<li><a href="#" >O</a></li>
+						<li><a href="#" >P</a></li>
+						<li><a href="#" >Q</a></li>
+						<li><a href="#" >R</a></li>
+						<li><a href="#" >S</a></li>
+						<li><a href="#" >T</a></li>
+						<li><a href="#" >U</a></li>
+						<li><a href="#" >V</a></li>
+						<li><a href="#" >W</a></li>
+						<li><a href="#" >X</a></li>
+						<li><a href="#" >Y</a></li>
+						<li><a href="#" >Z</a></li>
+						<li><a href="#" >0-9</a></li>
+					</ul>
+				</nav>
+				<p>See also: <a href="#">Care Guides</a>, <a href="#">Harvard Health Guides</a></p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-6">
+		 	<a class="btn btn-primary" data-toggle="collapse" href="#tab-section-3" role="button" aria-expanded="false" aria-controls="tab-section-3">
+			    Browse By Site Section
+			</a>
+			<div class="collapse" id="tab-section-3">
+			  <div class="card card-body">
+			    <nav">
+					<ul>
+						<li><a href="/drug_information.html">Drugs A-Z</a></li>
+						<li><a href="/sfx/">Side Effects Checker</a></li>
+						<li><a href="/dosage/">Dosage Guidelines</a></li>
+						<li><a href="/mednotes/">Manage your Meds</a></li>
+						<li><a href="/apps/">Mobile Apps</a></li>
+						<li><a href="/professionals.html">Health Professionals</a></li>
+						<li><a href="/news.html">Medical News</a></li>
+						<li><a href="/fda_alerts.html">FDA Alerts</a></li>
+						<li><a href="/newdrugs.html">New Drugs</a></li>
+						<li><a href="/sitemap.html">More</a></li>
+					</ul>
+				</nav>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--------------------------------------------------- Three div section ----------------------------------------------------->
+
+<div class="container padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="images/team1.png">
+				<div class="card-body">
+					<h4 class="card-title">Drug Safety Communication:</h4>
+					<p class="card-text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="images/team2.png">
+				<div class="card-body">
+					<h4 class="card-title">FDA Approved</h4>
+					<p class="card-text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="images/team3.png">
+				<div class="card-body">
+					<h4 class="card-title">Prices of MS Medication</h4>
+					<p class="card-text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---------------------------------------------------  main info ----------------------------------------------------->
+<div class="container">
+	<div class="row padding">
+		<div class="col-md-2">
+			<div class="advertisment">
+				<img class="card-img-top" src="images/team3.png">
+			</div>
+			<div class="sidebox col-xs-12">
+				<h4>Drug Information</h4>
+				<ul id="featured-list-1" class="ddc-list-column-2-fixed">
+					<table>
+						<tr>
+							<td><li><a href="#">A to Z Drug List</a></li></td>
+							<td><li><a href="#">Treatment Options</a></li></td>
+						</tr>
+						<tr>
+							<td><li><a href="#">Drugs by Class</a></li></td>
+							<td><li><a href="#">Dosage</a></li></td>
+						</tr>
+						<tr>
+							<td><li><a href="#">Side Effects</a></li></td>
+							<td><li><a href="#">Medical Q &amp; A</a></li></td>
+						</tr>
+						<tr>
+							<td><li><a href="#">Generic Drugs</a></li></td>
+							<td><li><a href="#">Harvard Health Guide</a></li></td>
+						</tr>
+						<tr>
+							<td><li><a href="#">Mayo Clinic Disease</a></li></td>
+							<td><li><a href="#">Generic Drugs</a></li></td>
+						</tr>
+						<tr>
+							<td><li><a href="#">A to Z Drug List</a></li></td>
+							<td><li><a href="#">Treatment Options</a></li></td>
+						</tr>
+						<tr>
+							<td><li><a href="#">Drugs by Class</a></li></td>
+							<td><li><a href="#">Dosage</a></li></td>
+						</tr>
+						<tr>	
+							<td><li><a href="#">Side Effects</a></li></td>
+							<td><li><a href="#">Medical Q &amp; A</a></li></td>
+						</tr>
+						<tr>
+							<td><li><a href="#">Harvard Health Guide</a></li></td>
+						</tr>
+					</table>
+					<!--	
+						<li><a href="#">Phonetic Search</a></li>	
+						<li><a href="#">Pregnancy Warnings</a></li>
+						<li><a href="#">OTC Database</a></li>
+						<li><a href="#">Inactive Ingredients</a></li>
+						<li><a href="#">Veterinary Drugs</a></li>
+						<li><a href="#">International Drugs</a></li>
+						<li><a href="#">Info en Español</a></li>
+						<li><a href="#">Pricing &amp; Coupon Guide</a></li>
+				-->
+				</ul>
+				<h4>Tools</h4>
+				<ul id="featured-list-3" class="ddc-list-column-2-fixed">
+					<li><a href="/drug_interactions.html">Interactions Checker</a></li>
+					<li><a href="/pill_identification.html">Pill Identifier</a></li>
+					<li><a href="/symptom-checker/">Symptom Checker</a></li>
+					<li><a href="/mednotes/">Medication Record</a></li>
+					<li><a href="/apps/">Mobile Apps</a></li>
+					<li><a href="/imprints.html">Drug Imprint Codes</a></li>
+					<li><a href="//forum.drugs.com/">Forums</a></li>
+					<li><a href="/answers/">Community Support</a></li>
+					<li><a href="/compare/">Compare Drugs</a></li>
+				</ul>
+				<h4>News &amp; Alerts</h4>
+				<ul id="featured-list-4" class="ddc-list-column-2-fixed">
+					<li><a href="/news.html">Medical News</a></li>
+					<li><a href="/clinical_trials.html">Clinical Trial Results</a></li>
+					<li><a href="/fda_alerts.html">FDA Drug Alerts</a></li>
+					<li><a href="/fda-consumer/">FDA Consumer Updates</a></li>
+					<li><a href="/newdrugs.html">New FDA Approvals</a></li>
+					<li><a href="/new-drug-applications.html">New Drug Applications</a></li>
+					<li><a href="/drug-shortages/">Drug Shortages</a></li>
+					<li><a href="/video/">Video Center</a></li>
+					<li><a href="/article/">Popular Articles</a></li>
+					<li><a href="/slideshow/">Health &amp; Medication Slideshows</a></li>
+				</ul>
+				<h4>Professionals</h4>
+				<ul id="featured-list-5" class="ddc-list-column-2-fixed">
+					<li><a href="/professionals.html">Resource Center</a></li>
+					<li><a href="/care_notes.html">Patient Care Notes</a></li>
+				</ul>
+			</div>
+			<div class="sideBox sideBoxTop100">
+				<div class="sideBoxHead">
+					<h4>Top 100 Drugs</h4>
+				</div>
+				<div class="sideBoxContent">
+				<ul class="top100list">
+					<li><a href="#">Abilify</a></li>
+					<li><a href="#">Acetaminophen</a></li>
+					<li><a href="#">Adderall</a></li>
+					<li><a href="#">Alprazolam</a></li>
+					<li><a href="#">Ambien</a></li>
+					<li><a href="#">Amitriptyline</a></li>
+					<li><a href="#">Amlodipine</a></li>
+					<li><a href="#">Amoxicillin</a></li>
+					<li><a href="#">Ativan</a></li>
+					<li><a href="#">Atorvastatin</a></li>
+					<li><a href="#">Azithromycin</a></li>
+					<li><a href="#">Baclofen</a></li>
+					<li><a href="#">Benadryl</a></li>
+					<li><a href="#">Bupropion</a></li>
+					<li><a href="#">Buspirone</a></li>
+					<li><a href="#">Benzonatate</a></li>
+					<li><a href="#">Duloxetine</a></li>
+					<li><a href="#">Montelukast</a></li>
+					<li><a href="#">Cephalexin</a></li>
+					<li><a href="#">Cetirizine</a></li>
+					<li><a href="#">Ciprofloxacin</a></li>
+					<li><a href="#">Citalopram</a></li>
+					<li><a href="#">Clindamycin</a></li>
+					<li><a href="#">Clonazepam</a></li>
+					<li><a href="#">Clonidine</a></li>
+					<li><a href="#">Cyclobenzaprine</a></li>
+					<li><a href="#">Cymbalta</a></li>
+					<li><a href="#">Diazepam</a></li>
+					<li><a href="#">Diclofenac</a></li>
+					<li><a href="#">Doxycycline</a></li>
+					<li><a href="#">Eliquis</a></li>
+					<li><a href="#">Escitalopram</a></li>
+					<li><a href="#">Famotidine</a></li>
+					<li><a href="#">Fentanyl</a></li>
+					<li><a href="#">Flexeril</a></li>
+					<li><a href="#">Fluoxetine</a></li>
+					<li><a href="#">Furosemide</a></li>
+					<li><a href="#">Gabapentin</a></li>
+					<li><a href="#">Hydrochlorothiazide</a></li>
+					<li><a href="#">Hydrocodone</a></li>
+					<li><a href="#">Hydroxyzine</a></li>
+					<li><a href="#">Ibuprofen</a></li>
+					<li><a href="#">Klonopin</a></li>
+					<li><a href="#">Levothyroxine</a></li>
+					<li><a href="#">Lexapro</a></li>
+					<li><a href="#">Lisinopril</a></li>
+					<li><a href="#">Lithium</a></li>
+					<li><a href="#">Loratadine</a></li>
+					<li><a href="#">Lorazepam</a></li>
+					<li><a href="#">Losartan</a></li>
+					<li><a href="#">Lyrica</a></li>
+					<li><a href="#">Melatonin</a></li>
+					<li><a href="#">Meloxicam</a></li>
+					<li><a href="#">Metformin</a></li>
+					<li><a href="#">Methocarbamol</a></li>
+					<li><a href="#">Metoprolol</a></li>
+					<li><a href="#">Metronidazole</a></li>
+					<li><a href="#">Miralax</a></li>
+					<li><a href="#">Mirtazapine</a></li>
+					<li><a href="#">Dicyclomine</a></li>
+					<li><a href="#">Fluconazole</a></li>
+					<li><a href="#">Mupirocin</a></li>
+					<li><a href="#">Mucinex</a></li>
+					<li><a href="#">Naproxen</a></li>
+					<li><a href="#">Omeprazole</a></li>
+					<li><a href="#">Ondansetron</a></li>
+					<li><a href="#">Oxycodone</a></li>
+					<li><a href="#">Pantoprazole</a></li>
+					<li><a href="#">Penicillin</a></li>
+					<li><a href="#">Percocet</a></li>
+					<li><a href="#">Phentermine</a></li>
+					<li><a href="#">Prednisone</a></li>
+					<li><a href="#">Promethazine</a></li>
+					<li><a href="#">Propranolol</a></li>
+					<li><a href="#">Prozac</a></li>
+					<li><a href="#">Ranitidine</a></li>
+					<li><a href="#">Seroquel</a></li>
+					<li><a href="#">Sertraline</a></li>
+					<li><a href="#">Sildenafil</a></li>
+					<li><a href="#">Soma</a></li>
+					<li><a href="#">Spironolactone</a></li>
+					<li><a href="#">Suboxone</a></li>
+					<li><a href="#">Sudafed PE</a></li>
+					<li><a href="#">Tamsulosin</a></li>
+					<li><a href="#">Tizanidine</a></li>
+					<li><a href="#">Toradol</a></li>
+					<li><a href="#">Tramadol</a></li>
+					<li><a href="#">Trazodone</a></li>
+					<li><a href="#">Tylenol</a></li>
+					<li><a href="#">Valium</a></li>
+					<li><a href="#">Venlafaxine</a></li>
+					<li><a href="#">Viagra</a></li>
+					<li><a href="#">Vyvanse</a></li>
+					<li><a href="#">Wellbutrin</a></li>
+					<li><a href="#">Xanax</a></li>
+					<li><a href="#">Zantac</a></li>
+					<li><a href="#">Zofran</a></li>
+					<li><a href="#">Zofran</a></li>
+					<li><a href="#">Zoloft</a></li>
+					<li><a href="#">Zyrtec</a></li>
+				</ul>
+					<div class="top100more">
+						<a href="#">More A-K</a> ·
+						<a href="#">More L-Z</a> ·
+						<a href="#">By Class</a> ·
+						<a href="#">UK Medicines</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-8">
+			<div class="main-block">
+				<div class="main-header">
+					<p class="ddc-text-size-small text-color-muted mgt-0"><b>Drugs.com</b> is the most popular, comprehensive and up-to-date source of drug information online. Providing free, peer-reviewed, accurate and independent data on more than 24,000 prescription drugs, over-the-counter medicines &amp; natural products.</p>
+				</div>
+				<div class="main-content">
+					<p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div>
+					<p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div><p class="posted-by">Posted today in <a href="#">News for Health Professionals</a></p>
+					<h2><a href="#">FDA: Weight Control Drug Lorcaserin May Raise Cancer Risk</a></h2>
+					<div class="media">
+					  <img src="images/drugslogo.png" class="align-self-start mr-3" alt="...">
+					  <div class="media-body">
+					    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					  </div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+				<div class="user-block">
+					<i class="fa fa-male"></i>
+				</div>
+				<p>My Account</p>
+				<button type="button" class="btn btn-primary">Sign in</button>
+				<span class="action-register"><a href="#">Not registered?</a></span>
+		</div>
+	</div>
+</div>
+
+<!---------------------------------------------------  Mobile app ----------------------------------------------------->
+<div class="container">
+	<div class="row padding">
+		<div class="col-md-6">
+			<img src="images/mob.jfif">
+		</div>
+		<div class="col-md-6">
+			<h1>Drugs.com Mobile App</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button type="button" class="btn btn-primary">Sign in</button>
+		</div>
+	</div>
+</div>
+<!---------------------------------------------------  Footer ----------------------------------------------------->
+
+<footer>
+	<div class="container padding">
+		<div class="row text-center">
+			<div class="col-md-1 logo">
+				<img src="images/drugslogo.png">
+			</div>
+			<div class="col-md-2">
+				<hr class="light">
+				<p>Support</p>
+				<hr class="light">
+				<a href="#">Help Center</a>
+				<a href="#">Frequent Questions</a>
+				<a href="#">Site Map</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="col-md-2">
+				<hr class="light">
+				<p>Support</p>
+				<hr class="light">
+				<a href="#">Help Center</a>
+				<a href="#">Frequent Questions</a>
+				<a href="#">Site Map</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="col-md-2">
+				<hr class="light">
+				<p>Support</p>
+				<hr class="light">
+				<a href="#">Help Center</a>
+				<a href="#">Frequent Questions</a>
+				<a href="#">Site Map</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="col-md-5">
+				<hr class="light">
+				<p>Support</p>
+				<hr class="light">
+				<a href="#">Help Center</a>
+				<a href="#">Frequent Questions</a>
+				<a href="#">Site Map</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<p>Drugs.com provides accurate and independent information on more than 24,000 prescription drugs, over-the-counter medicines and natural products. This material is provided for educational purposes only and is not intended for medical advice, diagnosis or treatment. Data sources include IBM Watson Micromedex (updated 3 Jan 2020), Cerner Multum™ (updated 6 Jan 2020), Wolters Kluwer™ (updated 2 Jan 2020) and others.</p>
+		</div>
+	</div>
+</footer>
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
