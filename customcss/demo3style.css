@@ -129,16 +129,23 @@ p{
 	display: inline-block;
     align-items: center;
     justify-content: center;
+    padding: 2px; 
 }	
 
-.list-abc li a{
+.list-abc li button{
 	background-color: #f0f0f0;
     color: #242424;
     min-width: 100%;
     min-height: 38px;
     border-radius: 4px;
     text-align: center;
+    padding: 10px; 
 }
+.list-abc li button:hover{
+	background: #000000;
+	color: #ffffff; 		
+}
+
 /*--------------------------------------------------- Three div section ----------------------------------------------------*/
 
 .news-cards{
