@@ -174,7 +174,28 @@ p{
 }
 
 /*---------------------------------------------------  Footer ----------------------------------------------------*/
-.logo img{
-	width: 80px;
-	height: 80px;	
+footer{
+	padding-top: 2rem;	
 }
+
+.logo img{
+	height: auto;
+	max-width: 100%;
+	padding-top: 25px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
