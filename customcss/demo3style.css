@@ -190,7 +190,6 @@ p{
 	font-size: 13px;
 }
 
-
 /*---------------------------------------------------  Mobile app ----------------------------------------------------*/
 
 .mob-app{
@@ -288,6 +287,15 @@ footer{
 .indicators{
 	display: none;
 }
+
+.sidebox h5{
+	text-align: center;
+}
+
+.sideBoxHead h5{
+	text-align: center;
+}
+
 
 }
 
