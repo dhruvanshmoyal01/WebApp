@@ -69,7 +69,7 @@ p{
 
 .drug-input{
 	border-radius: 100px!important;
-	min-width: 150px;
+	min-width: 200px;
 	min-height: 45px;
 }
 
@@ -83,7 +83,7 @@ p{
 
 .input-group a{
 	color: #b3b3b3;
-	margin-top: 12px;
+	margin-top: 10px;
 	margin-left:-30px;
 	z-index: 1; 
 }
@@ -109,6 +109,22 @@ p{
 }
 
 /*--------------------------------------------------- Search drugs ----------------------------------------------------*/
+
+.nav-item button{
+	background: #cccccc;
+	color: #005ce6; 
+}
+
+.nav-item button:hover{
+	background: #000000;
+	color: #ffffff; 	
+}
+
+.nav-item-2 button{
+	background: #000000;
+	color: #ffffff; 		
+}
+
 .list-abc li{ 
 	display: inline-block;
     align-items: center;
@@ -219,11 +235,54 @@ footer{
 }
 
 
+/*------------------------------------------------------media tags----------------------------------*/
+
+@media(max-width: 1200px){
+
+.find-drugs h1{
+	font-family: 'Libre Caslon Text', serif; 
+	font-size: 25px;
+	}
+
+}
+
+@media(max-width: 992px){
+
+.find-drugs h1{
+	font-family: 'Libre Caslon Text', serif; 
+	font-size: 25px;
+	}
+
+}
+@media(max-width: 768px){
+
+.find-drugs h1{
+	font-family: 'Libre Caslon Text', serif; 
+	font-size: 25px;
+	}
+
+.indicators{
+	display: none;
+}
+
+}
+@media(max-width: 576px){
+
+.find-drugs h1{
+	font-family: 'Libre Caslon Text', serif; 
+	font-size: 25px;
+}
+
+.box h5{
+	font-size: 15px; 
+}
 
 
+.indicators{
+	display: none;
+}
 
-
-
+}
 
 
 
