@@ -110,12 +110,18 @@ p{
 
 /*--------------------------------------------------- Search drugs ----------------------------------------------------*/
 .list-abc li{ 
-	display: inline;
+	display: inline-block;
+    align-items: center;
+    justify-content: center;
 }	
 
 .list-abc li a{
 	background-color: #f0f0f0;
     color: #242424;
+    min-width: 100%;
+    min-height: 38px;
+    border-radius: 4px;
+    text-align: center;
 }
 /*--------------------------------------------------- Three div section ----------------------------------------------------*/
 
