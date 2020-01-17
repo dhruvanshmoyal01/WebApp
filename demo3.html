@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-------------------------------------------Custom css link------------------------------------>    	
  	<link rel="stylesheet" type="text/css" href="customcss/demo3style.css">
+ 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
 <!----------------------------------------Font awesome cdn link----------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
 <!------------------------------------------ Bootstrap CSS --------------------------------------->
@@ -24,7 +26,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse nav-ul" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Drugs A-z <span class="sr-only">(current)</span></a>
@@ -56,17 +58,18 @@
 
 <!--------------------------------------------------- Find drugs header ----------------------------------------------------->
 
-<section class="newsletter" id="newsletterid">
+<section class="find-drugs navbar-light">
   <div class="container heading text-center">
-    <h1 class="text-uppercase font-weight-bold text-center">Find Drugs and Condition</h1>
+    <h1 class="text-uppercase font-weight-bold text-center">Find Drugs and Conditions</h1>
   </div>  
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 col-12">
           <div class="input-group mb-3">
-            <input type="text" class="form-control news-input" placeholder="Enter drug name or medical condition, pill imprint, etc.">
+            <input type="text" class="form-control drug-input" placeholder="Enter drug name or medical condition, pill imprint, etc.">
+            <a href="#"><i class="fa fa-search"></i></a>
           </div>
-          <div class="ddc-hero-wrapper__trending">
+          <div class="form-footer text-center">
 			Trending searches:
 			<a href="#">gabapentin</a>, 
 			<a href="#">amlodipine</a>, 
@@ -82,37 +85,30 @@
 <!---------------------------------------------------  carousel ----------------------------------------------------->
 
 <div id="demo" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-
     <!-- The slideshow -->
     <div class="carousel-inner container">
       <div class="carousel-item active">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-12">
-            <div class="box">
+            <div class="box text-center">
               <a href="#"><img src="images/conditions-diseases.png" class="img-fluid img-thumbnail"></a>
               <h5>Condition & Diseases</h5>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-12">
-            <div class="box">
+            <div class="box text-center">
               <a href="#"><img src="images/drugs-az.png" class="img-fluid img-thumbnail"></a>
            	  <h5>Drugs A-Z</h5>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-12">
-            <div class="box">
+            <div class="box text-center">
               <a href="#"><img src="images/interactions-checker.png" class="img-fluid img-thumbnail"></a>
               <h5>Interaction Checker</h5>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-12">
-            <div class="box">
+            <div class="box text-center">
               <a href="#"><img src="images/my-med-list.png" class="img-fluid img-thumbnail"></a>
               <h5>My med list</h5>
              </div>
@@ -122,53 +118,62 @@
       <div class="carousel-item">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-12">
-            <div class="box">
+            <div class="box text-center">
               <a href="#"><img src="images/pill-identifier.png" class="img-fluid img-thumbnail"></a>
               <h5>Pill identification</h5>
              </div>
           </div>
           <div class="col-lg-3 col-md-3 col-12">
-            <div class="box">
+            <div class="box text-center">
               <a href="#"><img src="images/treatment-guides.png" class="img-fluid img-thumbnail"></a>
               <h5>Treatment guides</h5>
              </div>
           </div>
           <div class="col-lg-3 col-md-3 col-12">
-            <div class="box">
+            <div class="box text-center">
               <a href="#"><img src="images/discount-card.png" class="img-fluid img-thumbnail"></a>
               <h5>Discount card</h5>
              </div>
           </div>
           <div class="col-lg-3 col-md-3 col-12">
-            <div class="box">
+            <div class="box text-center">
               <a href="#"><img src="images/price-guide.png" class="img-fluid img-thumbnail"></a>
               <h5>Price guide</h5>
-             </div>
+            </div>
           </div>
         </div>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
+    	<!-- Left and right controls -->
+    	<div class="indicators">
+		    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		      <i class="fa fa-arrow-left"></i>
+		    </a>
+		    <a class="carousel-control-next" href="#demo" data-slide="next">
+		      <i class="fa fa-arrow-right"></i>
+		    </a>
+	    </div>
+	</div>
 </div>
+<hr class="my-4">
+
 <!--------------------------------------------------- Search drugs ----------------------------------------------------->
 
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<p>
-			  <a class="btn btn-primary" data-toggle="collapse" href="#tab-section-1" role="button" aria-expanded="false" aria-controls="tab-section-1">
+			
+			<ul class="nav nav-tabs">
+			  <li class="nav-item">
+			    <a class="nav-link active" data-toggle="collapse" href="#tab-section-1" role="button" aria-expanded="false" aria-controls="tab-section-1">
 			    Browse Drugs
-			  </a>
-			  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tab-section-2" aria-expanded="false" aria-controls="tab-section-2">
+			  	</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" type="button" data-toggle="collapse" data-target="#tab-section-2" aria-expanded="false" aria-controls="tab-section-2">
 			    Button Conditions
-			  </button>
-			</p>
+			  	</a>
+			  </li>
+			</ul>
 			<div class="collapse" id="tab-section-1">
 			  <div class="card card-body">
 			    <nav aria-label="Drug alphabetical index">
@@ -203,7 +208,13 @@
 						<li><a href="#">Advanced Search</a></li>
 					</ul>
 				</nav>
-				<p class="ddc-section__browse-more clear">Browse A-Z: <a href="/drug_information.html">Drug</a>, <a href="/medical_conditions.html">Treatment</a>, <a href="/alpha/condition/">Condition</a> or <a href="/drug-classes.html">Class</a></p>
+				<p>
+					Browse A-Z: 
+					<a href="#">Drug</a>, 
+					<a href="#">Treatment</a>, 
+					<a href="#">Condition</a> or 
+					<a href="">Class</a>
+				</p>
 			  </div>
 			</div>
 			<div class="collapse" id="tab-section-2">
@@ -244,7 +255,7 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-		 	<a class="btn btn-primary" data-toggle="collapse" href="#tab-section-3" role="button" aria-expanded="false" aria-controls="tab-section-3">
+		 	<a class="nav-link active" data-toggle="collapse" href="#tab-section-3" role="button" aria-expanded="false" aria-controls="tab-section-3">
 			    Browse By Site Section
 			</a>
 			<div class="collapse" id="tab-section-3">
@@ -304,6 +315,7 @@
 		</div>
 	</div>
 </div>
+
 <!---------------------------------------------------  main info ----------------------------------------------------->
 <div class="container">
 	<div class="row padding">
