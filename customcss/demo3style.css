@@ -163,6 +163,10 @@ p{
 	padding-top: 5px;
 }
 
+.top100more{
+	font-size: 13px;
+}
+
 
 /*---------------------------------------------------  Mobile app ----------------------------------------------------*/
 
@@ -184,9 +188,18 @@ footer{
 	padding-top: 25px; 
 }
 
+.social{
+	font-size: 2em;
+	margin: 5px 20px; 
+}
 
-
-
+.social a{
+	border-color: #737373;  
+}
+.fa-facebook, .fa-twitter, .fa-google-plus-g, .fa-instagram, .fa-youtube{
+	color: #737373;
+	margin: 0 1rem;
+}
 
 
 
