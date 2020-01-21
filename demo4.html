@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-------------------------------------------Custom css link------------------------------------> 
 <link rel="stylesheet" type="text/css" href="customcss/demo4_style.css">   	
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 <!----------------------------------------Font awesome cdn link----------------------------------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 <!------------------------------------------ Bootstrap CSS --------------------------------------->
@@ -18,10 +19,10 @@
 <!--------------------------------- Navbar ---------------------------------------->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="https://www.goa.gov.in/">
-  	<img src="images/government-of-goa-logo.png" height="50px" width="50px">
+  	<img src="images/government-of-goa-logo.png" height="60px" width="60px">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span> 
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,23 +33,23 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Log In</a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          About Us
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Vision & Mission</a>
+          <a class="dropdown-item" href="#">Contact us</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Query..." aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
@@ -56,24 +57,23 @@
 
 <!------------------------------------------------- jumbotron ------------------------------>
 <div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="text-left font-weight-bold text-uppercase">Alumni corner</h1>
+    
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p>Register yourself as alumni.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
 </div>
-	
-<!----------------------------------------------- carousel ---------------------------------------->
 
+<!----------------------------------------------- carousel ---------------------------------------->
 <section class="happyClients">
   <div class="container heading text-center">
     <h1 class="text-center font-weight-bold">OUR HAPPY CLIENTS</h1>
     <p class="text-uppercase p-1">Our satisfied Customer says...</p>
   </div>
-  <div id="demo" class="carousel slide" data-ride="carousel">
 
+  <div id="demo" class="carousel slide users" data-ride="carousel">
   <!-- Indicators -->
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -178,22 +178,16 @@
     </div>
   </div>
 
-<br><br><br><br><br>
-<!----------------------------------------- card -------------------------------------------------->
-<div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-</div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 
+</div>
+</section>
 
 
 
