@@ -1,5 +1,6 @@
 body{
 	font-family: 'Playfair Display', serif!important;
+ 
 }
 
 /*-----------------------------------------------navbar-------------------------------*/
@@ -76,8 +77,43 @@ body{
 	color: white;
 }
 
-
-
+.container-fluid{
+    background-color: #eeeeee;
+}
+.fundraing-pojects{
+    background-color: white;
+    border: 4px #e0e0e0 solid;
+    margin-top: 20px;
+    padding: 20px;
+}
+.fundraing-pojects hr{
+    transform: translateY(-30px);
+}
+.view{
+    padding-right: 20px;
+   float: right;
+    transform: translateY(-30px);
+}
+.col-lg-6 h4{
+    padding-top: 0px;
+    color: #40c4ff;
+}
+.latest-news{
+    background-color: white;
+    border: 4px #e0e0e0 solid;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: -10px;
+    display: block;
+    text-align: center;
+}
+.center{
+    display:block;
+    text-align:center}
+}
+.lastest-news hr{
+   border: 3px #00b0ff solid; 
+}
 
 
 
