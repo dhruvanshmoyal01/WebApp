@@ -75,6 +75,33 @@ body{
 	padding: 10px 0px;
 	color: white;
 }
+}
+.modified{
+	margin-top: 30px;
+	padding: 25px;
+}
+
+ #view{
+	float: left;
+	position: relative;
+	left: 90%;
+	top: -30px;
+}
+.fa{
+	filter: grayscale(1);
+	
+}
+
+.fa:hover{
+	filter: grayscale(0);
+}
+
+
+.align-button{
+	position: relative;
+	left: 50%;
+}
+
 
 
 
