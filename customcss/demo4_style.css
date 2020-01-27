@@ -117,13 +117,37 @@ body{
     display:block;
     text-align:center}
 }
-.lastest-news hr{
-   border: 3px #00b0ff solid; 
+.latest-news hr.new2{
+   border-top: 3px solid #00b0ff; 
+    width: 3%;
+}
+/* to give nice position to contain*/
+.up{
+    transform: translateY(-20px);
+}
+.up1{
+    transform: translateY(-50px);
+    font-weight: 100;
 }
 
-
-
-
+.align-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-30px);
+}
+.three-icon{
+    margin: 10px auto 20px;
+    
+}
+.icons{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+/*to remove hover underline*/
+.latest-news a:hover,.view a:hover{
+    text-decoration: none;
+}
 
 
 
