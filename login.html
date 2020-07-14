@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-------------------------------------------Custom css link------------------------------------>    	
+	<link rel="stylesheet" type="text/css" href="customcss/login-style.css">
 <!----------------------------------------Font awesome cdn link----------------------------------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 <!------------------------------------------ Bootstrap CSS --------------------------------------->
@@ -13,11 +14,48 @@
 	<title>Login</title>
 </head>
 <body>
-<!------------------------------------------- Navigation bar ------------------------------------->
 
 <!------------------------------------------- login form ------------------------------------->
-
-<!------------------------------------------- footer section ------------------------------------->
+	<div class="row mt-auto">
+		<div class="col-lg-5 m-auto">
+			<div class="card mt-5 bg-dark">
+				<div class="card-title text-center mt-3">
+					<div class="flip-box">
+						<div class="flip-box-inner">
+							<div class="flip-box-front">
+								<img src="images/user-female.png" width="150px" height="150px">			
+							</div>
+							<div class="flip-box-back">
+								<img src="images/user-male.png" width="150px" height="150px">			
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-body">
+					<form>
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<i class="fa fa-user fa-2x"></i>
+								</span>
+							</div>
+							<input type="text" class="form-control py-4" placeholder="username">
+						</div>
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<i class="fa fa-lock fa-2x"></i>
+								</span>
+							</div>
+							<input type="text" class="form-control py-4" placeholder="password">
+						</div>
+						<button type="button" class="btn btn-outline-success btn-lg btn-block">Login</button>
+						<p class="float-right text-white mt-2"><input type="checkbox" >Remember me</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
